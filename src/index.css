@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Title";
+  src: url("./assets/fonts/cy-grotesk-key-medium.ttf");
+}
+@font-face {
+  font-family: "Paragraph";
+  src: url("./assets/fonts/Questrial.ttf");
+}
+:root {
+  --color-primary: #adff29;
+  --color-secondary: #7f00ff;
+  --color-tertiary: #262103;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Title";
+}
+body {
+  margin: 0;
+  font-family: "Paragraph";
+}

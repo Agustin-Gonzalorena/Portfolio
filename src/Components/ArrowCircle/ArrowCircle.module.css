@@ -1,0 +1,49 @@
+.circle {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.circle.circleSecondary {
+  background-color: var(--color-secondary);
+}
+.circle.circleSecondary::after {
+  background-color: var(--color-secondary);
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-tertiary);
+  border-radius: 50%;
+  z-index: 0;
+  box-sizing: border-box;
+}
+.circle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.arrow {
+  width: 60%;
+  height: 60%;
+  background-image: url(../../assets/icons/arrow.svg);
+  background-size: cover;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+}

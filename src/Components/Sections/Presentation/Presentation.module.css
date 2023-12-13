@@ -1,0 +1,172 @@
+.contain {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-secondary);
+}
+.nameContain {
+  width: 100%;
+  height: 40%;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.boxName {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.boxName h1 {
+  font-size: 6vw;
+  font-weight: 600;
+  text-shadow: 5px 5px 2px rgb(38, 33, 3, 40%);
+}
+.decor1 {
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  rotate: -160deg;
+  right: -20px;
+  top: 0;
+  width: 20vw;
+  height: 15vw;
+  background-image: url(../../../assets/icons/pirulete-Black.svg);
+  background-size: cover;
+}
+/* ---- */
+.infoContain {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.boxInfo {
+  width: 80%;
+  height: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-right: 10%;
+}
+.boxTitle h2 {
+  font-size: 4vw;
+  color: var(--color-primary);
+}
+.point {
+  color: #fff;
+}
+.boxArrowCircle {
+  max-width: 100px;
+  max-height: 100px;
+  width: 6vw;
+  height: 6vw;
+}
+.boxText {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.text {
+  width: 400px;
+  color: #fff;
+  margin-left: 15%;
+  box-sizing: border-box;
+}
+.lineD {
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  width: 340px;
+  height: 24px;
+  background-image: url(../../../assets/icons/lineaD-Black.svg);
+  background-size: cover;
+}
+.square {
+  position: absolute;
+  right: 2%;
+  bottom: 10%;
+  width: 10vw;
+  height: 10vw;
+  background-image: url(../../../assets/icons/mSquare.svg);
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .square {
+    display: none;
+  }
+  .contain {
+    height: auto;
+    min-height: 100vh;
+  }
+  .nameContain {
+    height: 40%;
+    min-height: 300px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .boxName {
+    padding-bottom: 30px;
+    box-sizing: border-box;
+  }
+  .boxName h1 {
+    font-size: 10vw;
+  }
+  .decor1 {
+    width: 20vw;
+    height: 20vw;
+  }
+  .infoContain {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+  .lineD {
+    width: 200px;
+    height: 16px;
+    rotate: 90deg;
+    left: auto;
+    bottom: 30%;
+    right: -10%;
+  }
+  .boxInfo {
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+    padding: 0;
+    gap: 30px;
+    box-sizing: border-box;
+  }
+  .boxTitle h2 {
+    font-size: 8vw;
+  }
+  .boxText {
+    width: 90%;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .boxArrowCircle {
+    width: 60px;
+    height: 60px;
+  }
+  .text {
+    width: 100%;
+    padding-left: 10%;
+    margin: 0;
+  }
+}
