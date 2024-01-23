@@ -1,6 +1,130 @@
 .stack {
-  min-height: 100vh;
-  height: auto;
+  height: 100vh;
   width: 100%;
-  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+.contain {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+.boxTitle {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding-top: 12vh;
+  box-sizing: border-box;
+}
+.boxTitle h2 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+.lineC {
+  width: 200px;
+  height: 40px;
+  background-image: url(../../../assets/icons/lineC.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  rotate: 15deg;
+  margin-left: 10%;
+}
+.boxTitle p {
+  width: 50%;
+  font-size: 1vw;
+}
+.boxInfo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.boxArrow {
+  max-width: 100px;
+  max-height: 100px;
+  height: 6vw;
+  width: 6vw;
+}
+.box {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: #242424;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 0px 0px var(--color-primary);
+  position: relative;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item img {
+  width: 55px;
+  height: 55px;
+}
+.item p {
+  color: #fff;
+}
+.decorP {
+  position: absolute;
+  background-image: url(../../../assets/icons/squareP.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
+  height: 40vh;
+  width: 100%;
+  max-width: 800px;
+  max-height: 400px;
+  bottom: -70px;
+  right: -100px;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .contain {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .boxTitle {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    padding-top: 0;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .boxTitle h2 {
+    font-size: 10vw;
+  }
+  .boxTitle p {
+    width: 100%;
+    font-size: 3.5vw;
+  }
+  .lineC {
+    display: none;
+  }
+  .boxInfo {
+    width: 100%;
+  }
+  .boxArrow {
+    height: 12vw;
+    width: 12vw;
+  }
+  .box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .decorP {
+    right: -35px;
+  }
 }

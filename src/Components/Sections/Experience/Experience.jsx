@@ -32,9 +32,10 @@ const Experience = () => {
             <div className={styles.step}>
               <p>Step by Step</p>
             </div>
+            {/* 
             <div className={styles.boxArrow}>
               <ArrowCircle secondary={true} />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.boxInfo}>

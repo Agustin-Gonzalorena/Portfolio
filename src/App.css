@@ -3,7 +3,7 @@
   z-index: 999;
   width: 60px;
   height: 60px;
-  background-image: url(../public/MyLogoAG.svg);
+  background-image: url(/MyLogoAG.svg);
   border-radius: 50%;
   background-size: cover;
   bottom: 20px;

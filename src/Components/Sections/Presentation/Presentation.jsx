@@ -16,9 +16,9 @@ const Presentation = () => {
         <div className={styles.square}></div>
         <section className={styles.boxInfo}>
           <div className={styles.boxTitle}>
-            <h2>WEB</h2>
+            <h2>Web</h2>
             <h2>
-              DEVELOPER <span className={styles.point}>.</span>
+              Developer <span className={styles.point}>.</span>
             </h2>
           </div>
           <div className={styles.boxText}>

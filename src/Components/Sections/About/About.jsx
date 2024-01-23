@@ -24,7 +24,11 @@ const About = () => {
             >
               <div className={styles.iGh}></div>
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://drive.google.com/file/d/1dygBT-IzAobX8KWKQOYPrW_5O5P9Atgq/view"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className={styles.iCv}></div>
             </a>
           </div>

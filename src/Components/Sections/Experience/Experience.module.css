@@ -94,6 +94,11 @@
   bottom: 10%;
   left: 25%;
 }
+@media screen and (min-width: 1920px) {
+  .step p {
+    font-size: 1.5vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .experience {
     height: auto;
