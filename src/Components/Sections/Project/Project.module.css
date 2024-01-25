@@ -1,0 +1,80 @@
+.project {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: linear-gradient(
+    0deg,
+    var(--color-primary) 0%,
+    var(--color-primary) 30%,
+    var(--color-secondary) 30%,
+    var(--color-secondary) 100%
+  );
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.contain {
+  width: 80%;
+}
+.boxTitle {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+}
+.boxTitle h2 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  color: #fff;
+}
+.boxArrow {
+  max-width: 100px;
+  max-height: 100px;
+  height: 6vw;
+  width: 6vw;
+  z-index: 2;
+}
+.decor {
+  position: absolute;
+  top: 2px;
+  right: -100px;
+  height: 24vw;
+  width: 24vw;
+  background-image: url(../../../assets/icons/lineP.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.boxInfo {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxBtnMore {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnMore {
+  text-decoration: none;
+  padding: 15px 30px;
+  background-color: #000;
+  border: none;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btnMore:hover {
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+}
+.btnMore:active {
+  transform: scale(0.9);
+}

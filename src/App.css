@@ -3,12 +3,14 @@
   z-index: 999;
   width: 60px;
   height: 60px;
-  background-image: url(/MyLogoAG.svg);
+  background-image: url(/AGlogo.svg);
   border-radius: 50%;
-  background-size: cover;
+  background-size: 104% 104%;
+  background-position: center;
   bottom: 20px;
   right: 20px;
   opacity: 1;
+  box-shadow: 0px 0px 10px 4px #0000009d;
   transition: all 0.1s ease-in-out;
   box-sizing: border-box;
 }

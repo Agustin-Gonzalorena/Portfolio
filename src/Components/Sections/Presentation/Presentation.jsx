@@ -6,8 +6,28 @@ const Presentation = () => {
     <section className={styles.contain}>
       <section className={styles.nameContain}>
         <div className={styles.boxName}>
-          <h1>AGUSTIN</h1>
-          <h1>GONZALORENA</h1>
+          <h1>
+            <span style={{ animationDelay: "0s" }}>A</span>
+            <span style={{ animationDelay: "0.08s" }}>G</span>
+            <span style={{ animationDelay: "0.16s" }}>U</span>
+            <span style={{ animationDelay: "0.24s" }}>S</span>
+            <span style={{ animationDelay: "0.32s" }}>T</span>
+            <span style={{ animationDelay: "0.40s" }}>I</span>
+            <span style={{ animationDelay: "0.48s" }}>N</span>
+          </h1>
+          <h1>
+            <span style={{ animationDelay: "0.56s" }}>G</span>
+            <span style={{ animationDelay: "0.64s" }}>O</span>
+            <span style={{ animationDelay: "0.72s" }}>N</span>
+            <span style={{ animationDelay: "0.80s" }}>Z</span>
+            <span style={{ animationDelay: "0.88s" }}>A</span>
+            <span style={{ animationDelay: "0.96s" }}>L</span>
+            <span style={{ animationDelay: "1.04s" }}>O</span>
+            <span style={{ animationDelay: "1.08s" }}>R</span>
+            <span style={{ animationDelay: "1.16s" }}>E</span>
+            <span style={{ animationDelay: "1.24s" }}>N</span>
+            <span style={{ animationDelay: "1.32s" }}>A</span>
+          </h1>
         </div>
         <div className={styles.decor1}></div>
       </section>

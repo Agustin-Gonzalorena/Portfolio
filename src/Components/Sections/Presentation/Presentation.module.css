@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
 }
 .boxName h1 {
   font-size: 6vw;
@@ -37,6 +38,24 @@
   height: 15vw;
   background-image: url(../../../assets/icons/pirulete-Black.svg);
   background-size: cover;
+}
+.boxName h1 span {
+  animation: onload 1s linear;
+  position: relative;
+}
+@keyframes onload {
+  0% {
+    color: #000;
+    text-shadow: 5px 5px 2px rgb(38, 33, 3, 40%);
+  }
+  50% {
+    color: var(--color-secondary);
+    text-shadow: 5px 5px 2px rgb(127, 0, 255, 40%);
+  }
+  100% {
+    color: #000;
+    text-shadow: 5px 5px 2px rgb(38, 33, 3, 40%);
+  }
 }
 /* ---- */
 .infoContain {
