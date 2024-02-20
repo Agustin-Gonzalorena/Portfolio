@@ -25,7 +25,7 @@ const About = () => {
               <div className={styles.iGh}></div>
             </a>
             <a
-              href="https://drive.google.com/file/d/1dygBT-IzAobX8KWKQOYPrW_5O5P9Atgq/view"
+              href="https://drive.google.com/file/d/1rDfiB3wdjQeIVxJfVgBCxdPw9ew_a6XR/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
