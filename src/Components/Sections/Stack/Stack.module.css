@@ -1,130 +1,72 @@
 .stack {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .contain {
   width: 80%;
-  height: 100%;
-  display: flex;
-  box-sizing: border-box;
+}
+.item img {
+  width: 20px;
+  height: 20px;
 }
 .boxTitle {
-  width: 50%;
-  height: 100%;
-  background-color: #fff;
+  min-height: 200px;
   display: flex;
-  flex-direction: column;
-  gap: 120px;
-  padding-top: 12vh;
-  box-sizing: border-box;
+  justify-content: center;
 }
 .boxTitle h2 {
   font-size: 6vw;
   text-transform: uppercase;
   color: var(--color-secondary);
 }
-.lineC {
-  width: 200px;
-  height: 40px;
-  background-image: url(../../../assets/icons/lineC.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  rotate: 15deg;
-  margin-left: 10%;
-}
-.boxTitle p {
-  width: 50%;
-  font-size: 1vw;
-}
 .boxInfo {
-  width: 50%;
-  height: 100%;
+  height: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 20px;
-}
-.boxArrow {
-  max-width: 100px;
-  max-height: 100px;
-  height: 6vw;
-  width: 6vw;
+  padding: 10px;
+  user-select: none;
 }
 .box {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
   background-color: #242424;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  box-shadow: 8px 8px 0px 0px var(--color-primary);
+  margin-bottom: 20px;
   padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 10px 10px 0px 0px var(--color-primary);
-  position: relative;
 }
+
 .item {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .item img {
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
+  pointer-events: none;
 }
 .item p {
-  color: #fff;
-}
-.decorP {
-  position: absolute;
-  background-image: url(../../../assets/icons/squareP.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100%;
-  height: 40vh;
-  width: 100%;
-  max-width: 800px;
-  max-height: 400px;
-  bottom: -70px;
-  right: -100px;
-  z-index: -1;
+  margin: 0;
+  margin-top: 5px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .contain {
-    flex-direction: column;
-    gap: 20px;
-  }
   .boxTitle {
-    width: 100%;
-    height: auto;
-    min-height: 250px;
-    padding-top: 0;
-    justify-content: flex-end;
-    gap: 20px;
+    min-height: 100px;
+    align-items: center;
   }
   .boxTitle h2 {
     font-size: 10vw;
-  }
-  .boxTitle p {
-    width: 100%;
-    font-size: 3.5vw;
-  }
-  .lineC {
-    display: none;
-  }
-  .boxInfo {
-    width: 100%;
-  }
-  .boxArrow {
-    height: 12vw;
-    width: 12vw;
-  }
-  .box {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .decorP {
-    right: -35px;
   }
 }

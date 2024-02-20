@@ -1,22 +1,29 @@
 import React, { useEffect, useState } from "react";
-import styles from "./Carousel.module.css";
 import { FaGithub } from "react-icons/fa";
 import { GrDeploy } from "react-icons/gr";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
+import styles from "./Carousel.module.css";
 
 import { myProjects } from "../../utils/myProjects";
 
 export default function Carousel() {
   const [countView, setCountView] = useState(0);
+  const [paginationMobile, setPaginationMobile] = useState(false);
+  const [navigationMobile, setNavigationMobile] = useState(true);
   useEffect(() => {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth <= 768) {
       setCountView(1);
+      setPaginationMobile(true);
+      setNavigationMobile(false);
     } else {
       setCountView(3);
+      setPaginationMobile(false);
+      setNavigationMobile(true);
     }
   }, []);
   return (
@@ -27,8 +34,9 @@ export default function Carousel() {
         centeredSlides={true}
         centeredSlidesBounds={true}
         loop={true}
-        navigation={true}
-        modules={[Navigation]}
+        navigation={navigationMobile}
+        pagination={paginationMobile}
+        modules={[Navigation, Pagination]}
         className={styles.swiper}
       >
         {myProjects.map((project) => (

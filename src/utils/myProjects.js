@@ -1,7 +1,7 @@
-import shortUrl from "../assets/imgs/cp-shorturl.png";
-import mario from "../assets/imgs/cp-mario.png";
-import shopmelon from "../assets/imgs/cp-shopmelon.png";
-import ashcomputer from "../assets/imgs/cp-ashComputer.png";
+import shortUrl from "../assets/imgs/cp-shorturl2.png";
+import mario from "../assets/imgs/cp-mario2.png";
+import shopmelon from "../assets/imgs/cp-shopmelon2.png";
+import ashcomputer from "../assets/imgs/cp-ashComputer2.png";
 
 export const myProjects = [
   {

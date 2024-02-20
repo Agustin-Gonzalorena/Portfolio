@@ -1,12 +1,14 @@
 .contain {
   width: 100%;
   height: 100vh;
-  background-color: var(--color-secondary);
+  /*  background-color: var(--color-secondary); */
+  background-color: #242424;
 }
 .nameContain {
   width: 100%;
   height: 40%;
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary); */
+  background-color: #242424;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -24,8 +26,10 @@
 .boxName h1 {
   font-size: 6vw;
   font-weight: 600;
-  text-shadow: 5px 5px 2px rgb(38, 33, 3, 40%);
+  /* text-shadow: 5px 5px 2px rgb(38, 33, 3, 40%); */
+  text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.4);
   letter-spacing: 6px;
+  color: #fff;
 }
 .decor1 {
   position: absolute;
@@ -38,23 +42,25 @@
   height: 15vw;
   background-image: url(../../../assets/icons/pirulete-Black.svg);
   background-size: cover;
+  filter: invert();
 }
 .boxName h1 span {
-  animation: onload 1s linear;
+  animation: onload 0.5s linear;
   position: relative;
 }
 @keyframes onload {
   0% {
-    color: #000;
-    text-shadow: 5px 5px 2px rgb(38, 33, 3, 40%);
+    color: #fff;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.4);
   }
-  50% {
+  20% {
     color: var(--color-secondary);
-    text-shadow: 5px 5px 2px rgb(127, 0, 255, 40%);
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.4);
   }
+
   100% {
-    color: #000;
-    text-shadow: 5px 5px 2px rgb(38, 33, 3, 40%);
+    color: var(--color-primary);
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.4);
   }
 }
 /* ---- */
@@ -80,7 +86,8 @@
   color: var(--color-primary);
 }
 .point {
-  color: #fff;
+  color: var(--color-secondary);
+  text-shadow: 1px 1px 1px #000, 1px 1px 1px #000, 1px 1px 1px #000;
 }
 .boxArrowCircle {
   max-width: 100px;
@@ -110,6 +117,7 @@
   height: 24px;
   background-image: url(../../../assets/icons/lineaD-Black.svg);
   background-size: cover;
+  filter: invert();
 }
 .square {
   position: absolute;
@@ -119,6 +127,7 @@
   height: 10vw;
   background-image: url(../../../assets/icons/mSquare.svg);
   background-size: cover;
+  filter: invert();
 }
 @media screen and (max-width: 768px) {
   .square {
@@ -141,6 +150,7 @@
   }
   .boxName h1 {
     font-size: 10vw;
+    letter-spacing: 0.5vw;
   }
   .decor1 {
     width: 20vw;
