@@ -1,7 +1,7 @@
 import shortUrl from "../assets/imgs/cp-shorturl2.png";
 import mario from "../assets/imgs/cp-mario2.png";
 import shopmelon from "../assets/imgs/cp-shopmelon2.png";
-import ashcomputer from "../assets/imgs/cp-ashComputer2.png";
+import efemerides from "../assets/imgs/cp-efemerides.png";
 
 export const myProjects = [
   {
@@ -32,11 +32,11 @@ export const myProjects = [
   },
   {
     id: 4,
-    title: "Angular E-commerce",
+    title: "Efermérides",
     description:
-      "An e-commerce made with Angular for the university, practicing cart logic.",
-    img: ashcomputer,
-    githubUrl: "https://github.com/Agustin-Gonzalorena/ashComputer",
-    deployUrl: "https://agustin-gonzalorena.github.io/ashComputer/home",
+      "Historical data for today according to OpenAI. API deployed on local server.",
+    img: efemerides,
+    githubUrl: "https://github.com/Agustin-Gonzalorena/efemerides-front",
+    deployUrl: "https://efemeridedehoy.vercel.app/",
   },
 ];

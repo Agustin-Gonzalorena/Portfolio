@@ -43,7 +43,11 @@ export default function Carousel() {
           <SwiperSlide className={styles.card} key={project.id}>
             <h3>{project.title}</h3>
             <div className={styles.boxImg}>
-              <img src={project.img} alt="" />
+              <img
+                src={project.img}
+                alt={project.title}
+                title={project.title}
+              />
             </div>
             <p>{project.description}</p>
             <div className={styles.boxBtn}>
@@ -51,6 +55,7 @@ export default function Carousel() {
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                title="GitHub"
               >
                 <FaGithub />
               </a>
@@ -58,6 +63,7 @@ export default function Carousel() {
                 href={project.deployUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Deploy"
               >
                 <GrDeploy />
               </a>

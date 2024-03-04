@@ -14,6 +14,7 @@ const About = () => {
               href="https://www.linkedin.com/in/agustin-gonzalorena/"
               target="_blank"
               rel="noopener noreferrer"
+              title="LinkedIn"
             >
               <div className={styles.iIn}></div>
             </a>
@@ -21,6 +22,7 @@ const About = () => {
               href="https://github.com/Agustin-Gonzalorena"
               target="_blank"
               rel="noopener noreferrer"
+              title="GitHub"
             >
               <div className={styles.iGh}></div>
             </a>
@@ -28,6 +30,7 @@ const About = () => {
               href="https://drive.google.com/file/d/1rDfiB3wdjQeIVxJfVgBCxdPw9ew_a6XR/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              title="CV"
             >
               <div className={styles.iCv}></div>
             </a>

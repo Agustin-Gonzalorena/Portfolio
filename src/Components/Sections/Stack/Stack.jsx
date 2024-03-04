@@ -16,6 +16,7 @@ const Stack = () => {
                   <img
                     src={item.icon}
                     alt={item.name}
+                    title={item.name}
                     style={item.id == 3 ? { filter: "invert()" } : null}
                   />
                   <p>{item.name}</p>

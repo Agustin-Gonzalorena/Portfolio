@@ -23,6 +23,7 @@ const Project = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.btnMore}
+            title="More projects"
           >
             MORE
           </a>
